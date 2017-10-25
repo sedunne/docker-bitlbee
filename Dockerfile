@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Stephen Dunne III <sedunne@icanhazmail.net>
 
-ENV VERS 3.4.2-r1
+ENV VERS 3.5.1-r0
 
 RUN apk add --no-cache --update bitlbee=$VERS bitlbee-otr=$VERS
 RUN /usr/sbin/adduser -h /var/lib/bitlbee -s /sbin/nologin -DH bitlbee &&\
