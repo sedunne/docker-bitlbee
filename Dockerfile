@@ -1,7 +1,7 @@
 FROM alpine:edge
 LABEL maintainer='sedunne@icanhazmail.net'
 
-ENV VERS 3.5.1-r6
+ENV VERS 3.6-r0
 
 RUN apk add --no-cache --update bitlbee=$VERS bitlbee-otr=$VERS
 RUN /usr/sbin/adduser -h /var/lib/bitlbee -s /sbin/nologin -DH bitlbee &&\
